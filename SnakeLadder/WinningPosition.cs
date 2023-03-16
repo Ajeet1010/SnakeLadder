@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace SnakeLadder
 {
-    // UC5- Repeat until player reaches EXACT_WINNING_POSITION 100.
+    // UC6- Count the no of times DICE rolled to reach winning position.
     internal class WinningPosition
     {
-        int INITIAL_POSITION = 0, WINNING_POSITION =100;
+        int INITIAL_POSITION = 0, WINNING_POSITION =100, DIE_ROLL =0;
         public void Game()
         {
             int player_position = 0;
@@ -56,8 +56,9 @@ namespace SnakeLadder
                             break;
                     }
                 }
-
+                DIE_ROLL++;
             }
+            Console.WriteLine("No. of times dice is rolled is:  "+ DIE_ROLL);
         }
     }
 }
