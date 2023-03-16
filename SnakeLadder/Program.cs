@@ -5,8 +5,8 @@
         static void Main(string[] args)
         {
             Console.WriteLine("*****  Snake & Ladder Problems  *****\n");
-            WinningPosition countroll = new WinningPosition();
-            countroll.Game();
+            SnakeLadderOption check = new SnakeLadderOption();
+            check.Game();
         }
     }
 }
