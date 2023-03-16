@@ -5,8 +5,8 @@
         static void Main(string[] args)
         {
             Console.WriteLine("*****  Snake & Ladder Problems  *****\n");
-            RollDice rollDice = new RollDice();
-            rollDice.Game();
+            SnakeLadderOption snakeLadderOption = new SnakeLadderOption();
+            snakeLadderOption.Game();
         }
     }
 }
