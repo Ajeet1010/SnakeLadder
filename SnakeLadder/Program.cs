@@ -5,8 +5,8 @@
         static void Main(string[] args)
         {
             Console.WriteLine("*****  Snake & Ladder Problems  *****\n");
-            WinningPosition snakeLadderOption = new WinningPosition();
-            snakeLadderOption.Game();
+            WinningPosition winning = new WinningPosition();
+            winning.Game();
         }
     }
 }
