@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SnakeLadder
 {
-    // UC4- Repeat until player reaches WINNINGPOSITION 100.
+    // UC5- Repeat until player reaches EXACT_WINNING_POSITION 100.
     internal class WinningPosition
     {
         int INITIAL_POSITION = 0, WINNING_POSITION =100;
@@ -14,12 +14,12 @@ namespace SnakeLadder
         {
             int player_position = 0;
             Console.WriteLine("Player starting position is:  " + INITIAL_POSITION);
-            while (player_position < WINNING_POSITION)
+            while (player_position != WINNING_POSITION)
             {
                 Random random = new Random();
-                Console.Write("\n1. Snake\t 2. Ladder\t3. Chanced missed\nEnter choice:  ");
-                int choice = Convert.ToInt32(Console.ReadLine());
-                // use random keyword to run automatically.
+                Console.Write("\n1. Snake\t 2. Ladder\t3. Chanced missed\n");
+                int choice = random.Next(1, 4);
+                // use int keyword to run by storing data.
                 
                 Console.Write("Chosed option is:  " + choice);
 
@@ -56,7 +56,7 @@ namespace SnakeLadder
                             break;
                     }
                 }
-                    
+
             }
         }
     }
